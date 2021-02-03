@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.member.ManagerMemberFragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="게시글 관리"
+        android:textColor="@color/main02"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:fontFamily="@font/nanumgothic"/>
+
+    <View
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/main01"/>
+
+    <LinearLayout
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/id_qna"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:hint="TITLE입력"/>
+
+        <Button
+            android:id="@+id/id_btn"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="찾기"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/board_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button android:id="@+id/write_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새글등록"/>
+
+    </LinearLayout>
+
+</LinearLayout>

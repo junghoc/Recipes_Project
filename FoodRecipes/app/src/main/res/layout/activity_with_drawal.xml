@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WithDrawalActivity"
+    android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/backimage" />
+
+                <TextView
+                    android:id="@+id/txt_reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="회원 탈퇴"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/black"
+                    android:layout_below="@+id/img_back"
+                    android:id="@+id/view"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="정말로 탈퇴하시겠습니까?"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/withdrawal_tv1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="탈퇴 후 고객님의 쿠폰을 더
+                \n이상 사용하실 수 없으며 재가입시에도
+                \n적용되지 않습니다."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/withdrawal_tv1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true">
+
+                    <CheckBox
+                        android:id="@+id/withdrawal_check"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="동의하고 탈퇴하기"/>
+
+                    <Button
+                        android:id="@+id/withdrawal_send"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="회원탈퇴"
+                        android:enabled="false"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+</LinearLayout>

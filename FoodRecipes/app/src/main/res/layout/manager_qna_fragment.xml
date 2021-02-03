@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.member.ManagerMemberFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1:1 문의 현황"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="@color/main02"/>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="총 1:1 문의"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/main02"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/nanumgothic"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="대기중 문의"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/main02"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/nanumgothic"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="답변 완료"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/main02"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/nanumgothic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/total_cnt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/main03"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/nanumgothic"/>
+
+        <TextView
+            android:id="@+id/wait_cnt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/main03"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/nanumgothic"/>
+
+        <TextView
+            android:id="@+id/answered_cnt"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/main03"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/nanumgothic"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/main01"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1:1문의 관리"
+        android:gravity="center"
+        android:textColor="@color/main02"
+        android:fontFamily="@font/nanumgothic"/>
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/wait_qna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="대기중" />
+
+        <RadioButton
+            android:id="@+id/answered_qna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="답변완료" />
+
+        <RadioButton
+            android:id="@+id/all_qna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="전부" />
+
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/qna_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="6dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="ID : "
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumgothic"/>
+
+        <EditText
+            android:id="@+id/id_qna"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="Title : "
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanumgothic"/>
+
+        <EditText
+            android:id="@+id/title_qna"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:inputType="text"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="찾기" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

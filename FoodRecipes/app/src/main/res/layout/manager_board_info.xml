@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/main02"
+        android:fontFamily="@font/nanumgothic"
+        android:gravity="center"
+        android:text="개시글 정보"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main01"
+        android:layout_margin="6dp"/>
+
+    <TableLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="IDX"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/idx_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="TITLE" />
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/title_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:text="CONTENT"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/content_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:textSize="15dp"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="DATE"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/date_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="LIKE"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/like_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="WRITER" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/writer_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="STATUS" />
+
+            <TextView
+                android:id="@+id/status_board"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/nanumgothic"
+                android:text=""
+                android:textColor="@color/black" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <Button
+            android:id="@+id/pre_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="이전"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/del_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="삭제"/>
+
+    </LinearLayout>
+
+</LinearLayout>

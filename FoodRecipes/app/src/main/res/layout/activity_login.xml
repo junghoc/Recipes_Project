@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/blackx"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"
+        android:id="@+id/back_home"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECIPE PROJECT"
+        android:textSize="20dp"
+        android:layout_above="@+id/input_id"
+        android:layout_centerInParent="true"
+        android:id="@+id/login"
+        android:paddingBottom="20dp"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:layout_above="@+id/input_pwd"
+        android:layout_centerInParent="true"
+        android:hint="아이디"
+        android:id="@+id/input_id"
+        android:gravity="center"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:layout_centerInParent="true"
+        android:hint="비밀번호"
+        android:id="@+id/input_pwd"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:ems="16"
+        android:layout_below="@+id/input_pwd"
+        android:id="@+id/btn_login"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디/비밀번호 찾기"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignLeft="@+id/btn_login"
+        android:id="@+id/find_info"
+        android:paddingRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignRight="@+id/btn_login"
+        android:id="@+id/regi_member"
+        />
+
+</RelativeLayout>

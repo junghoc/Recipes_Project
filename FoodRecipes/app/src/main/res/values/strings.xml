@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FoodRecipes</string>
+    <string name="app_name2">FOODRECIPES</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">홈</string>
+    <string name="menu_mypage">내정보</string>
+    <string name="menu_notice">공지사항</string>
+    <string name="menu_logout">로그아웃</string>
+    <string name="menu_withdrawal">회원탈퇴</string>
+    <string name="menu_admin_page">관리자 페이지</string>
+    <string name="menu_recipes">레시피</string>
+</resources>

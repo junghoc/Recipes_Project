@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="회원정보"
+        android:textSize="18dp"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor="@color/white"
+        android:background="@color/main02"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main01"
+        android:layout_margin="6dp"/>
+
+    <TableLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="IDX"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/idx_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="ID"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/title_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="PWD"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/content_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="NAME"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/date_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="GENDER"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/like_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="BIRTH" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/writer_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="PHONE"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/status_board"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="EMAIL"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/email_member"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="REGDATE"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/regdate_member"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="del_info"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:id="@+id/del_info_member"
+                android:text=""
+                android:textColor="@color/black"
+                android:fontFamily="@font/nanumgothic"/>
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <Button
+            android:id="@+id/pre_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="이전"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/move_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="회원수정"/>
+
+        <Button
+            android:id="@+id/member_fire_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="회원강퇴"/>
+
+        <Button
+            android:id="@+id/del_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="회원탈퇴"/>
+
+    </LinearLayout>
+
+</LinearLayout>
